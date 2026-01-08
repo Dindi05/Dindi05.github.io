@@ -291,6 +291,35 @@ main {
   text-transform: uppercase;
   letter-spacing: 0.08em;
   font-size: 0.9rem;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
+  background: linear-gradient(90deg, rgba(47, 230, 255, 0.15), rgba(47, 230, 255, 0));
+  padding: 0.35rem 0.5rem;
+  border-radius: 999px;
+}
+
+.project-slideshow {
+  position: relative;
+  height: 180px;
+  margin-top: 1rem;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(47, 230, 255, 0.2);
+}
+
+.slideshow-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.slideshow-image.is-active {
+  opacity: 1;
 }
 
 .project-text ul {
