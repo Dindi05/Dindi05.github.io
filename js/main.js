@@ -1,7 +1,11 @@
 const slideshows = document.querySelectorAll('.project-slideshow');
 
 slideshows.forEach((slideshow) => {
-  const slides = Array.from(slideshow.querySelectorAll('.slideshow-image'));
+  let slides = Array.from(slideshow.querySelectorAll('.slideshow-image'));
+  if (slides.length === 0) {
+    slides = Array.from(slideshow.querySelectorAll('img'));
+    slides.forEach((slide) => slide.classList.add('slideshow-image'));
+  }
   if (slides.length <= 1) {
     return;
   }
