@@ -210,17 +210,6 @@ main {
   object-position: 60% center;
 }
 
-.project-thumb-frame {
-  padding: 8px 8px 8px 24px;
-  border-radius: 16px;
-  border: 1px solid rgba(47, 230, 255, 0.2);
-  background: rgba(30, 39, 51, 0.85);
-}
-
-.project-thumb-frame .project-thumb {
-  border: none;
-  border-radius: 12px;
-}
 
 .project-title {
   margin: 0 0 0.4rem;
