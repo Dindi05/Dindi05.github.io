@@ -124,6 +124,7 @@ main {
 
 .projects {
   padding: clamp(3rem, 8vw, 6rem) 0 clamp(4rem, 10vw, 7rem);
+  margin-top: 18px;
   background:
     radial-gradient(900px 400px at 10% 0%, rgba(20, 179, 255, 0.08), transparent 70%),
     linear-gradient(180deg, rgba(11, 17, 24, 0.7), rgba(7, 10, 14, 0.9));
@@ -164,7 +165,7 @@ main {
 .projects-grid {
   display: grid;
   gap: 1.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .project-card {
@@ -296,5 +297,17 @@ main {
 
   .hero-image {
     height: 60vh;
+  }
+}
+
+@media (max-width: 900px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
   }
 }
