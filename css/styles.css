@@ -208,7 +208,18 @@ main {
 
 .project-thumb-avenue {
   object-position: 60% center;
-  padding-left: 200px;
+}
+
+.project-thumb-frame {
+  padding: 8px;
+  border-radius: 16px;
+  border: 1px solid rgba(47, 230, 255, 0.2);
+  background: rgba(11, 17, 24, 0.85);
+}
+
+.project-thumb-frame .project-thumb {
+  border: none;
+  border-radius: 12px;
 }
 
 .project-title {
