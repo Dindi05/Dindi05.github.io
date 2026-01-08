@@ -92,6 +92,17 @@ main {
   justify-content: center;
 }
 
+.hero-right-links {
+  position: absolute;
+  bottom: clamp(1.5rem, 6vh, 3rem);
+  left: 50%;
+  transform: translateX(10%);
+  display: flex;
+  gap: 0.9rem;
+  align-items: center;
+  z-index: 2;
+}
+
 .icon-link {
   width: 44px;
   height: 44px;
@@ -322,6 +333,7 @@ main {
 .slideshow-image.is-active {
   opacity: 1;
 }
+
 
 .project-text ul {
   margin: 0;
