@@ -74,6 +74,10 @@ main {
   text-align: center;
 }
 
+.hero-avatar {
+  display: none;
+}
+
 .hero-title span {
   color: var(--accent-400);
 }
@@ -354,6 +358,21 @@ main {
 
   .hero-image {
     height: 60vh;
+  }
+
+  .hero-right-links {
+    display: none;
+  }
+
+  .hero-avatar {
+    display: block;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 1rem;
+    border: 2px solid rgba(47, 230, 255, 0.45);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.4);
   }
 }
 
